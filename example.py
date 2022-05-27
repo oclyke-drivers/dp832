@@ -4,10 +4,10 @@ port='/dev/usbtmc1'
 
 d = dp832(port)
 
-print(d.isConnected())
-print(d.GetState())
-
 channel = 1
+
+print(d.isConnected())
+print(d.GetState(channel))
 
 # d.SetVoltage(channel, 0.0)
 # d.SetCurrent(channel, 0.5)
