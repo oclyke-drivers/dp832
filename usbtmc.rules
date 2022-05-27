@@ -1,0 +1,3 @@
+# USBTMC stuff.
+# Get the various magic numbers using lsusb
+SUBSYSTEMS=="usb", ACTION=="add", ATTRS{idVendor}=="1ab1", ATTRS{idProduct}=="0e11", GROUP="usbtmc", MODE="0666"
